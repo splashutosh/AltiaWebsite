@@ -24,7 +24,7 @@
 			function zoom(zm) {
 				var image = document.getElementById("img");
 				if(toggled){
-					TweenMax.to(image, 1, {scaleX:1.7, scaleY:1.7});
+					TweenMax.to(image, 1, {scaleX:2.0, scaleY:2.0});
 					toggled=false;
 				}else{
 					TweenMax.to(image, 1, {scaleX:1.0, scaleY:1.0});
@@ -32,27 +32,6 @@
 				}
 			}
     </script>
-    
-	<style type="text/css">
-			
-		.zoomin img { height: 270px; width: 960px;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			transition: all 0.5s ease; 
-			-moz-transform: scale(1.1);
-			-webkit-transform: scale(1.1);
-			transform: scale(1.1);
-			z-index: 1;} 
-		.yuh {padding-top: 48px;}
-		.ind {padding-top: 41px;}
-		.gd {padding-right: 10px; padding-top: 30px;}
-		.tt {padding-top: 30px;}
-		.sb {padding-top: 35px;}
-		
-	</style>
-
-
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -247,8 +226,8 @@
                 </div>
                 <div class="single-features">
                   <div class="col-sm-6 col-sm-offset-1 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-    				<div class="zoomin">
-    					<img id="img" src="panacastdiff.png">
+    				<div class="zoomin" width="1277" height="359">
+    					<img id="img" src="images/pano.png">
 					</div>
 				  </div>
                   <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInUpBig" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -264,8 +243,6 @@
         </div>
     </section>
      <!--/#features--> 
-	</div>
-     </section>
     <section id="clients">
         <div class="container">
             <div class="row">

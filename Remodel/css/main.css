@@ -29,6 +29,40 @@
     color:#C03035;
   }
 
+.zoomin img {
+    height: auto;
+    width: 1000px;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	z-index: 1;
+} 
+		
+.yuh {
+    padding-top: 48px;
+}
+
+.ind {
+    padding-top: 41px;
+}
+
+.gd {
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.tt {
+    padding-top: 30px;
+}
+
+.sb {
+    padding-top: 35px;
+}
+
   a:hover {
     outline: none;
     text-decoration:none;
