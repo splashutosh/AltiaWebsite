@@ -1068,7 +1068,6 @@ ul.elements li > i{
   width: 100%;
 }
 
-
 .portfolio-single:hover .portfolio-view{
   display: block;
   -webkit-animation: fadeInUp 400ms;
@@ -2828,4 +2827,8 @@ span.stButton_gradient,
   -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
   border-radius: 100%;
   margin: 10px 0;
+}
+
+.center{
+    margin: auto;
 }
