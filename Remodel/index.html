@@ -10,14 +10,16 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
-    <link href="css/styles.css" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet">  
     <link href="css/lightbox.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+
 
     <script>
 			var toggled = true;
@@ -47,6 +49,7 @@
 
 <body>
 
+
 	<header id="header">      
         <div class="container">
             <div class="row">
@@ -55,8 +58,6 @@
                         <ul class="nav nav-pills">
                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div> 
@@ -118,14 +119,6 @@
                         <li><a href="shortcodes.html ">Shortcodes</a></li>                    
                     </ul>
                 </div>
-                <div class="search">
-                    <form role="form">
-                        <i class="fa fa-search"></i>
-                        <div class="field-toggle">
-                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </header>
@@ -136,12 +129,16 @@
             <div class="row">
                 <div class="main-slider animate-in">
                     <div class="slide-text">
+                       <center>
                         <h1>The World's First Panoramic-4K USB Camera</h1>
-                        <p>Designed with natural viewing in mind. Exceptionally clear video with a natural human perspective. </p>
-                    </div>
-		    <div class="slide-pan">
-                    	<img src="images/home/slider/panacast.png" class="slider-pan" alt="slider image">
-	    	    </div>
+                        <p style="color: #FFFFFF;">Designed with natural viewing in mind. Exceptionally clear video with a natural human perspective. </p>
+                        <img src="images/ckup.png" class="slider-pan" alt="slider image" style="left: -75%;">
+                        </center>
+                   
+		    		
+        
+            
+	    	   		</div>
                 </div>
             </div>
         </div>
@@ -217,6 +214,12 @@
                         <P>Set it up in your huddle room, or small collaboration space to see everyone from a natural perspective, as if you were there in person. </P>
                     </div>
                 </div>
+			</div>
+		</div>
+	</section>
+    <section id="features" class="content-section-a">
+         <div class="container">
+            <div class="row">
                 <div class="single-features">
                     <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
                         <h2>Immersive experience with popular collaboration apps</h2>
@@ -226,23 +229,37 @@
                         <img src="images/home/image2.png" class="img-responsive" alt="">
                     </div>
                 </div>
-                <div class="single-features">
+			 </div>
+		</div>
+    </section>
+    <section class="panoram">
+        <div class="single-features">
                   <div class="col-sm-6 col-sm-offset-1 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-    				<div class="zoomin" width="1277" height="359">
+    				<div class="zoomin">
     					<img id="img" src="images/pano.png">
 					</div>
-				  </div>
-                  <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInUpBig" data-wow-duration="500ms" data-wow-delay="300ms">
-                    
-						<label class="switch wow fadeInRightBig align-right mybutton">
-							<input class="mybutton" id='mybutton' type="checkbox" onclick='zoom(1.1)'>
-							<span class="slider round mybutton"></span>
-						</label>
-  				  
-  				  </div>
-                </div>
-            </div>
-        </div>
+			</div>
+		</div>
+			  
+<!--
+	<section class="">		  
+	     <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInUpBig" data-wow-duration="500ms" data-wow-delay="300ms">      
+					<label class="switch wow fadeInRightBig align-right">
+						<input class="mybutton" id='mybutton' type="checkbox" onclick='zoom(1.1)'>
+						<span class="slider round mybutton"></span>
+					</label>		  
+	     </div>
+	</section>
+-->
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onClick="zoom(1.1)">
+				
+				<label class="onoffswitch-label" for="myonoffswitch">
+					<span class="onoffswitch-inner"></span>
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+
     </section>
      <!--/#features--> 
     <section id="clients">
@@ -256,22 +273,22 @@
                     </div>
                     <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive tt" alt=""></a>
+                            <a href="https://www.thinktiv.com"><img src="images/home/client1.png" class="img-responsive tt" alt=""></a>
                         </div>
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive omg" alt=""></a>
+                            <a href="https://www.cmu.edu"><img src="images/home/client2.png" class="img-responsive omg" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive gd" alt=""></a>
+                            <a href="https://www.godaddy.com"><img src="images/home/client3.png" class="img-responsive gd" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.jpg" class="img-responsive yuh" alt=""></a>
+                            <a href="https://www.matson.com"><img src="images/home/client4.jpg" class="img-responsive yuh" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive ind" alt=""></a>
+                            <a href="https://www.indeed.com"><img src="images/home/client5.png" class="img-responsive ind" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive sb" alt=""></a>
+                            <a href="https://www.stonybrookmedicine.edu"><img src="images/home/client6.png" class="img-responsive sb" alt=""></a>
                         </div>
                     </div>
                 </div>

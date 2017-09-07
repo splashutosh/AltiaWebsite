@@ -24,14 +24,79 @@
     height: 100%;
   }
 
+.bullshit{
+	margin: 0 auto;
+}
 
   a{
     color:#C03035;
   }
 
+.diff{
+	color:#FCFCFC;
+	position: relative;
+}
+
+.content-section-a {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.onoffswitch {
+	margin: auto;
+    position: relative; width: 81px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 8px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 8px;
+    background-color: #ADADAD; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 20px; margin: 5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 47px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+
+.panoram{
+	padding: 70px 0;
+	background-color:#ffffff;
+}
 .zoomin img {
-    height: auto;
-    width: 1000px;
+	padding-left: 70px;
     -webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -42,7 +107,7 @@
 	z-index: 1;
 } 
 
-/*commebt*/
+
 .yuh {
     padding-top: 48px;
 }
@@ -93,7 +158,7 @@
   }
 
   h1{
-    color: #686868;
+    color: #FFFFFF;
   }
 
   h2{
@@ -202,7 +267,7 @@
 
 #header{
   margin-bottom: 0;
-  padding: 30px 0 60px 0;
+  padding: 20px 0 20px 0;
 }
 
 #header .navbar-inverse .container{
@@ -568,7 +633,8 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
+  /*background: url(../images/home/tour-bg.png) 0 100% repeat;*/
+  background: url(../images/bluebg.png) 0 100% repeat;
   position: relative;
 }
 
@@ -579,9 +645,10 @@ ul.sub-menu {
 
 #home-slider .slide-text{
   position: absolute;
-  top: 50px;
-  left: 0;
-  width: 450px;
+  top: -50px;
+  left: 25%;
+	margin:auto;
+  /*width: 450px;*/
 }
 
 .animate-in .slide-text {
@@ -614,7 +681,7 @@ ul.sub-menu {
 }
 
 .animate-in .slide-pan {
-  -webkit-animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
+  -webkit-animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,.220,1.000) 200ms both;
   animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
 }
 
@@ -691,7 +758,7 @@ ul.sub-menu {
 #action {
   background-image: url(../images/home/tour-bg.png);
   background-color: #fbfafa;
-  background-repeat: repeat-x;
+  background-repeat:repeat-x;
   height: 157px;
   background-position: center;
   display: table;
@@ -1777,7 +1844,6 @@ Blog with right sidebar
  /* The switch - the box around the slider */
 .switch {
   position: relative;
-  display: inline-block;
   width: 60px;
   height: 34px;
 }
@@ -1787,13 +1853,13 @@ Blog with right sidebar
 
 /* The slider */
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color:#000000;
   -webkit-transition: .4s;
   transition: .4s;
 }

@@ -11,8 +11,31 @@ body, html {
 
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 60;
 }
+
+.zoomin img {
+    height: auto;
+    width: 1000px;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	z-index: 1;
+} 
+
+.single-service {
+	overflow: hidden;
+	display: block;
+}
+.padding{
+	padding: 65px 0;
+}
+
+
 
 .intro-header {
   padding-top: 50px;
@@ -25,7 +48,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message {
   position: relative;
-  padding-top: 20%;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans";
+  padding-top: 50%;
   padding-bottom: 20%;
 }
 
